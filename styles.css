@@ -97,6 +97,46 @@ body {
     font-weight: 600;
 }
 
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--dark-gray);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.lang-btn:hover {
+    background: var(--light-gray);
+    border-color: var(--primary-blue);
+}
+
+.lang-btn.active {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+}
+
+.lang-btn .flag {
+    font-size: 1.3rem;
+}
+
+.lang-btn .lang-text {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -1064,6 +1104,15 @@ section {
 
     .nav-menu.active {
         display: flex;
+    }
+
+    .language-switcher {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    .lang-btn .lang-text {
+        display: none;
     }
 
     .hamburger {
