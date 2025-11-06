@@ -129,12 +129,11 @@ body {
 }
 
 .lang-btn .flag {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .lang-btn .lang-text {
-    font-weight: 600;
-    font-size: 0.85rem;
+    display: none;
 }
 
 .hamburger {
@@ -1109,10 +1108,6 @@ section {
     .language-switcher {
         margin-left: auto;
         margin-right: 1rem;
-    }
-
-    .lang-btn .lang-text {
-        display: none;
     }
 
     .hamburger {
