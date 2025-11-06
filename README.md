@@ -90,7 +90,7 @@ The color scheme is defined in CSS variables in `styles.css`:
 ```
 
 #### Contact Information
-Update the email addresses in the contact section (currently set to `info@captainil.org`)
+Update the email addresses in the contact section (currently set to `Bbbaruchi@gmail.com`)
 
 #### Donation Links
 Add your donation platform links to the "Support Captain IL" buttons
@@ -144,7 +144,7 @@ Point your domain's DNS to your hosting provider (GitHub Pages, Netlify, etc.)
 ## Contact
 
 For more information about Captain IL - Mission HOPE:
-- Email: info@captainil.org
+- Email: Bbbaruchi@gmail.com
 - Website: [Add your domain]
 
 ---
