@@ -1082,6 +1082,139 @@ section {
     }
 }
 
+/* Accessibility Button */
+.accessibility-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessibility-btn:hover {
+    background: #005a9e;
+    transform: scale(1.1);
+}
+
+.accessibility-menu {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    display: none;
+    min-width: 250px;
+}
+
+.accessibility-menu.active {
+    display: block;
+}
+
+.accessibility-menu h3 {
+    color: #0078D4;
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+}
+
+.accessibility-menu button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: #F3F4F6;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.accessibility-menu button:hover {
+    background: #E5E7EB;
+    border-color: #0078D4;
+}
+
+.accessibility-menu button.active {
+    background: #0078D4;
+    color: white;
+}
+
+.accessibility-menu a {
+    display: block;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #E5E7EB;
+    color: #0078D4;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.accessibility-menu a:hover {
+    text-decoration: underline;
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+body.high-contrast .navbar,
+body.high-contrast .footer,
+body.high-contrast section {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+body.high-contrast .btn {
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid #fff !important;
+}
+
+body.high-contrast a {
+    color: #ffff00 !important;
+}
+
+/* Large Text Mode */
+body.large-text {
+    font-size: 120%;
+}
+
+body.large-text h1 {
+    font-size: 3rem;
+}
+
+body.large-text h2 {
+    font-size: 2.2rem;
+}
+
+body.large-text p,
+body.large-text li {
+    font-size: 1.3rem;
+}
+
+/* Underline Links Mode */
+body.underline-links a {
+    text-decoration: underline !important;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {

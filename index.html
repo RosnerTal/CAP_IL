@@ -510,11 +510,84 @@
             <div class="footer-bottom">
                 <p>&copy; 2025 Captain IL - Mission HOPE. All rights reserved.</p>
                 <p>In honor of the People of Israel — and all who carry light through darkness.</p>
+                <p><a href="accessibility.html" style="color: #fff; text-decoration: underline;">♿ Accessibility Statement</a></p>
             </div>
         </div>
     </footer>
 
+    <!-- Accessibility Button -->
+    <button class="accessibility-btn" id="accessibilityBtn" aria-label="Accessibility Menu">♿</button>
+    
+    <div class="accessibility-menu" id="accessibilityMenu">
+        <h3>Accessibility Options</h3>
+        <button onclick="toggleHighContrast()" id="contrastBtn">🌓 High Contrast</button>
+        <button onclick="toggleLargeText()" id="textSizeBtn">🔤 Large Text</button>
+        <button onclick="toggleUnderlineLinks()" id="linksBtn">🔗 Underline Links</button>
+        <button onclick="resetAccessibility()">↺ Reset</button>
+        <a href="accessibility.html">📋 Accessibility Statement</a>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        // Accessibility Menu Toggle
+        document.getElementById('accessibilityBtn').addEventListener('click', function() {
+            document.getElementById('accessibilityMenu').classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const btn = document.getElementById('accessibilityBtn');
+            const menu = document.getElementById('accessibilityMenu');
+            if (!btn.contains(event.target) && !menu.contains(event.target)) {
+                menu.classList.remove('active');
+            }
+        });
+
+        // Load saved preferences
+        window.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('highContrast') === 'true') {
+                document.body.classList.add('high-contrast');
+                document.getElementById('contrastBtn').classList.add('active');
+            }
+            if (localStorage.getItem('largeText') === 'true') {
+                document.body.classList.add('large-text');
+                document.getElementById('textSizeBtn').classList.add('active');
+            }
+            if (localStorage.getItem('underlineLinks') === 'true') {
+                document.body.classList.add('underline-links');
+                document.getElementById('linksBtn').classList.add('active');
+            }
+        });
+
+        function toggleHighContrast() {
+            document.body.classList.toggle('high-contrast');
+            const isActive = document.body.classList.contains('high-contrast');
+            localStorage.setItem('highContrast', isActive);
+            document.getElementById('contrastBtn').classList.toggle('active', isActive);
+        }
+
+        function toggleLargeText() {
+            document.body.classList.toggle('large-text');
+            const isActive = document.body.classList.contains('large-text');
+            localStorage.setItem('largeText', isActive);
+            document.getElementById('textSizeBtn').classList.toggle('active', isActive);
+        }
+
+        function toggleUnderlineLinks() {
+            document.body.classList.toggle('underline-links');
+            const isActive = document.body.classList.contains('underline-links');
+            localStorage.setItem('underlineLinks', isActive);
+            document.getElementById('linksBtn').classList.toggle('active', isActive);
+        }
+
+        function resetAccessibility() {
+            document.body.classList.remove('high-contrast', 'large-text', 'underline-links');
+            localStorage.removeItem('highContrast');
+            localStorage.removeItem('largeText');
+            localStorage.removeItem('underlineLinks');
+            document.querySelectorAll('.accessibility-menu button').forEach(btn => btn.classList.remove('active'));
+        }
+    </script>
 </body>
 </html>
 
