@@ -5,785 +5,616 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Recovery Guide - Captain IL</title>
     <style>
-        @page {
-            margin: 2cm;
-        }
-        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            color: #1F2937;
+            line-height: 1.4;
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px 15px;
             background: #ffffff;
+            color: #333;
+            font-size: 0.9rem;
         }
-        
-        .cover {
-            text-align: center;
-            page-break-after: always;
-            padding: 100px 0;
-        }
-        
-        .logo {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #0078D4;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            color: #6B7280;
-            margin-bottom: 40px;
-            letter-spacing: 2px;
-        }
-        
-        .cover h1 {
-            font-size: 2.5rem;
-            color: #1F2937;
-            margin: 40px 0 20px;
-            line-height: 1.3;
-        }
-        
-        .cover-quote {
-            font-size: 1.3rem;
-            font-style: italic;
-            color: #0078D4;
-            margin: 40px 0;
-            padding: 20px;
-            border-left: 5px solid #0078D4;
-            background: #F3F4F6;
-        }
-        
-        .cover-date {
-            font-size: 1rem;
-            color: #6B7280;
-            margin-top: 40px;
-        }
-        
         h1 {
             color: #0078D4;
-            font-size: 2rem;
-            margin: 40px 0 20px;
-            page-break-after: avoid;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 5px;
+            margin-top: 10px;
         }
-        
         h2 {
             color: #0078D4;
-            font-size: 1.5rem;
-            margin: 30px 0 15px;
-            page-break-after: avoid;
-        }
-        
-        h3 {
-            color: #1F2937;
-            font-size: 1.2rem;
-            margin: 25px 0 10px;
-        }
-        
-        p {
-            margin: 15px 0;
-            text-align: justify;
-        }
-        
-        .quote-box {
-            background: #F0F9FF;
-            border-left: 5px solid #0078D4;
-            padding: 20px;
-            margin: 30px 0;
-            font-style: italic;
-            page-break-inside: avoid;
-        }
-        
-        .important-box {
-            background: #FFF9E6;
-            border: 2px solid #FFB900;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-            page-break-inside: avoid;
-        }
-        
-        .tools-box {
-            background: #F3F4F6;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 8px;
-            page-break-inside: avoid;
-        }
-        
-        ul, ol {
-            margin: 15px 0;
-            padding-left: 30px;
-        }
-        
-        li {
-            margin: 10px 0;
-        }
-        
-        .icon {
-            font-size: 2rem;
-            margin-right: 10px;
-        }
-        
-        .section-icon {
-            font-size: 2.5rem;
-            display: block;
-            margin-bottom: 15px;
-        }
-        
-        .hotline {
-            background: white;
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
             border-left: 4px solid #0078D4;
-            padding: 15px;
-            margin: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding-left: 10px;
         }
-        
-        .hotline strong {
-            color: #0078D4;
-            font-size: 1.2rem;
+        h3 {
+            color: #005a9e;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            margin-bottom: 8px;
         }
-        
-        .chapter-title {
-            background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%);
-            color: white;
-            padding: 30px;
-            margin: 40px -20px 30px;
+        h4 {
+            font-size: 1rem;
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
             text-align: center;
-            page-break-before: always;
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
         }
-        
-        .chapter-title h1 {
-            color: white;
-            margin: 0;
-        }
-        
-        .toc {
-            background: #F3F4F6;
-            padding: 30px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        
-        .toc h2 {
-            margin-top: 0;
-        }
-        
-        .toc ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .toc li {
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-        
-        .footer-note {
+        .quote {
             text-align: center;
+            font-size: 0.95rem;
             font-style: italic;
-            color: #6B7280;
-            margin: 40px 0;
-            padding: 20px;
-            border-top: 2px solid #E5E7EB;
+            color: #0078D4;
+            margin: 15px 0;
+            padding: 10px;
+            background: #f0f8ff;
+            border-radius: 5px;
         }
-        
-        @media print {
-            body {
-                max-width: 100%;
-            }
-            .page-break {
-                page-break-before: always;
-            }
+        .section {
+            margin: 15px 0;
+        }
+        p {
+            margin: 8px 0;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 4px 0;
+        }
+        .icon {
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+        .info {
+            background: #e7f3ff;
+            border-left: 3px solid #0078D4;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 15px 0;
+        }
+        .tool-item {
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+            font-size: 0.8rem;
+        }
+        .tool-item .icon {
+            font-size: 1rem;
+        }
+        .tool-item p {
+            margin: 3px 0;
+            font-size: 0.75rem;
+        }
+        .contact-section {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        .contact-section p {
+            margin: 5px 0;
+        }
+        .page-break {
+            page-break-after: always;
         }
     </style>
 </head>
 <body>
-
-<!-- COVER PAGE -->
-<div class="cover">
-    <div class="logo">CAPTAIN IL</div>
-    <div class="subtitle">MISSION HOPE</div>
+    <h1>Mental Recovery Guide</h1>
+    <div class="subtitle">Returning to Balance and Life After War</div>
+    <div class="subtitle">CAPTAIN IL - MISSION HOPE</div>
     
-    <h1>Mental Recovery Guide:<br>Returning to Balance and Life<br>After War</h1>
-    
-    <div class="cover-quote">
-        "To fight is courage.<br>
+    <div class="quote">
+        To fight is courage.<br>
         To feel is bravery.<br>
-        To choose to live – that is victory."
+        To choose to live – that's victory.
     </div>
-    
-    <p style="font-size: 1.1rem; margin: 30px 0;">
-        A Personal-Communal Guide for Mental Recovery After War<br>
-        As Part of Mission HOPE
-    </p>
-    
-    <div class="cover-date">
-        November 25, 2024<br>
-        #CAPTAIN.IL | BY LEV 19:18
+
+    <div class="info">
+        <strong>A Personal-Community Guide for Mental Recovery After War</strong><br>
+        As part of Mission Hope
     </div>
-</div>
 
-<!-- INTRODUCTION -->
-<div class="page-break">
-    <h1>💙 Introduction – The Captain's Message</h1>
-    
-    <p>With the joy of returning hostages and the end of another phase of the war, many still carry the battle within their hearts and souls. Warriors, reservists, those who returned, those still in uniform, and those beyond the border – all carry the same internal struggle.</p>
-    
-    <p>This is not just an external war of tanks and borders, but also an internal battle for returning to breathing, trust, and routine. The difficult part sometimes comes precisely afterward – when the quiet outside reveals the noise inside. The moments when the body is already home, but the mind is still there; the nights, the memories, the lack of words, and the feeling that no one fully understands.</p>
-    
-    <div class="quote-box">
-        <strong>This is the place to remember:</strong><br>
-        This journey is not weakness – it is a process of healing and growth.
+    <div class="section">
+        <p>With the joy of returning hostages and the end of another phase of the war, many still carry the battle in their hearts and souls. Soldiers, reservists, those who have returned, those still in uniform, and those beyond the border – all carry within them the same internal war.</p>
+        
+        <p>This is not just an external war of tanks and borders, but also an internal battle for returning to breath, trust, and routine. The hardest part often comes after – when the quiet outside reveals the noise within. The moments when the body is already home, but the mind is still there; the nights, the memories, the lack of words, and the feeling that no one fully understands.</p>
+        
+        <div class="quote">
+            This journey is not weakness – it is a process of healing and growth.
+        </div>
+        
+        <p>We are here to learn to heal ourselves, to return the soul to its place, and to rediscover peace, meaning, and hope. This guide was written with great love for reservist soldiers, but it is relevant to every Israeli wherever they are – to anyone carrying the stress, burden, and pain from recent times, seeking a way to return to balance and fuller life.</p>
+        
+        <div class="quote">
+            The heart fights, the body returns home – but the soul is still on its way.
+        </div>
     </div>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li>Introduction – The Captain's Message</li>
+        <li>Chapter 1 – What Happens to the Soul During War</li>
+        <li>Chapter 2 – Reactions and Symptoms of "Returning to Routine"</li>
+        <li>Chapter 3 – How to Begin Healing the Soul</li>
+        <li>Chapter 4 – Daily Coping Tools</li>
+        <li>Chapter 5 – Sources of Support, Community, and Help</li>
+        <li>Chapter 6 – Advice for Family and Friends</li>
+        <li>Summary – The Hope Journey with Captain IL: Turning Pain into Power</li>
+    </ul>
+
+    <h2><span class="icon">🌿</span> Chapter 1 – What Happens to the Soul During War?</h2>
     
-    <p>We are here to learn to rehabilitate ourselves, to return the soul to its place, and to find peace, meaning, and hope anew. This guide was written with great love for reserve soldiers and warriors, but it is relevant to every Israeli – to all who carry the stress, burden, and pain from recent times, and seek a way back to balance and fuller lives.</p>
-    
-    <div class="important-box">
-        <strong>The heart fights, the body returns home – but the soul is still on the way.</strong>
+    <h3>Normal Reactions in an Abnormal Period</h3>
+    <p>When exposed to danger, death, uncertainty, or extreme experience – the body and soul enter emergency mode. This is a natural, primal response whose purpose is survival. The physical and mental system release adrenaline and cortisol, increase alertness and reduce pain sensation – to enable us to function under pressure.</p>
+
+    <p><strong>Common reactions include:</strong></p>
+    <ul>
+        <li>Muscle tension, accelerated pulse, sweating, constant alertness</li>
+        <li>Difficulty falling asleep, light sleep or recurring nightmares</li>
+        <li>Heart palpitations, trembling, headaches or constant fatigue</li>
+        <li>Irritability, anger, sudden crying or feeling confused</li>
+        <li>Emotional detachment, feeling distant or losing sense of time</li>
+        <li>Strong need for control or conversely – difficulty making decisions</li>
+    </ul>
+
+    <div class="info">
+        <strong>💬 All these are completely normal reactions to an abnormal situation.</strong> They are evidence that the soul and body are mobilizing their forces to protect themselves – even if it feels "strange."
     </div>
-</div>
 
-<!-- TABLE OF CONTENTS -->
-<div class="toc">
-    <h2>📋 Table of Contents</h2>
+    <h3><span class="icon">⚙</span> How the Survival Mechanism Works</h3>
+    <p>During danger, the brain activates the "fight, flight, or freeze" system. It takes over the body in a split second, before thought can process what's happening. This response saves lives — but it also exacts an emotional and physical toll when it continues over time.</p>
+
+    <p>When the threat passes, the system should relax and return to balance. But after long periods of stress – the brain has difficulty understanding that the danger has ended, and the body continues to operate as if the battle is still ongoing: tense, stressed, exhausted.</p>
+
+    <div class="info">
+        The reactions you're experiencing now are not weakness – they are testimony to a body and soul that experienced extreme conditions and did everything to survive. Understanding this – is already the beginning of healing.
+    </div>
+
+    <div class="quote">
+        "The soul doesn't need orders to heal – it just needs a safe space to breathe."
+    </div>
+
+    <h2><span class="icon">💙</span> Chapter 2 – Reactions and Symptoms of "Returning to Routine"</h2>
+    
+    <h3>When the War Outside Ends – But Inside It Still Continues</h3>
+    <p>After the dust settles and life is supposed to "return to track," a new period begins. From the outside everything looks normal – but inside, something has changed. The body may be home, but the soul is still in survival mode.</p>
+
+    <h3><span class="icon">🌿</span> Normal Reactions After War</h3>
+    <p>These are natural and common reactions in the weeks and months following war:</p>
+
+    <p><strong>Emotional:</strong></p>
     <ul>
-        <li><strong>Chapter 1</strong> – What Happens to the Soul During War</li>
-        <li><strong>Chapter 2</strong> – Reactions and Symptoms of "Returning to Routine"</li>
-        <li><strong>Chapter 3</strong> – How to Begin Mental Recovery</li>
-        <li><strong>Chapter 4</strong> – Daily Coping Tools</li>
-        <li><strong>Chapter 5</strong> – Sources of Support, Community, and Help</li>
-        <li><strong>Chapter 6</strong> – Advice for Family and Friends</li>
-        <li><strong>Summary</strong> – The Journey of Hope with Captain IL: Turning Pain into Power</li>
+        <li>Sadness, sudden crying, hypersensitivity or impatience</li>
+        <li>Guilt feelings ("why me and not them?"), confusion or temporary loss of interest</li>
+        <li>Difficulty feeling "true happiness" or connection to things that once moved you</li>
+        <li>Recurring thoughts about what happened, or desire to completely distance from the subject</li>
     </ul>
-</div>
 
-<!-- CHAPTER 1 -->
-<div class="chapter-title">
-    <h1>Chapter 1: What Happens to the Soul During War</h1>
-</div>
-
-<h2>🌿 Normal Reactions in an Abnormal Period</h2>
-
-<p>When exposed to danger, death, uncertainty, or extreme experiences – the body and soul enter emergency mode. This is a natural, primal response designed for survival. The physical and mental systems release adrenaline and cortisol, increase alertness, and reduce pain sensation – to enable us to function under pressure.</p>
-
-<h3>Common Reactions Include:</h3>
-<ul>
-    <li>Muscle tension, rapid pulse, sweating, constant alertness</li>
-    <li>Difficulty falling asleep, light sleep, or recurring nightmares</li>
-    <li>Heart palpitations, trembling, headaches, or constant fatigue</li>
-    <li>Irritability, anger, sudden crying, or feelings of confusion</li>
-    <li>Emotional disconnection, feelings of distance, or loss of time sense</li>
-    <li>Strong need for control or conversely – difficulty making decisions</li>
-</ul>
-
-<div class="quote-box">
-    💬 All of these are completely normal reactions to an abnormal situation. They are evidence that the soul and body are mobilizing their forces to protect themselves – even if it feels "strange."
-</div>
-
-<h2>⚙ How the Survival Mechanism Works</h2>
-
-<p>During danger, the brain activates the "Fight – Flight – Freeze" system. It takes over the body in a split second, before thought can process what's happening. This response saves lives — but it also exacts an emotional and physical toll when prolonged.</p>
-
-<p>When the threat passes, the system is supposed to relax and return to equilibrium. But after long periods of stress – the brain struggles to understand that the danger has ended, and the body continues to operate as if the battle is still ongoing: tense, stressed, exhausted.</p>
-
-<div class="important-box">
-    <strong>The reactions you're experiencing now are not weakness</strong> – they are evidence of a body and soul that experienced an extreme situation and did everything to survive. Understanding this – that's already the beginning of healing.
-</div>
-
-<div class="quote-box">
-    "The soul doesn't need orders to heal – it just needs a safe space to breathe."
-</div>
-
-<!-- CHAPTER 2 -->
-<div class="chapter-title">
-    <h1>Chapter 2: Reactions and Symptoms of "Returning to Routine"</h1>
-</div>
-
-<h2>When the War Outside Ends – But Inside It Continues</h2>
-
-<p>After the dust settles and life is supposed to "return to track," a new period begins. From the outside, everything looks normal – but inside, something has changed. The body may be home, but the soul is still in survival mode.</p>
-
-<p>This is a period when many experience confusion, fatigue, emptiness, or difficulty understanding what exactly "isn't working." These are not signs of weakness – but evidence of a natural deep process of readjusting to life after extreme effort.</p>
-
-<h2>🌿 Normal Post-War Reactions</h2>
-
-<p>These are natural and common reactions in the weeks and months after war. In most cases, they weaken over time when the soul and body receive rest, security, and support:</p>
-
-<h3>Emotional:</h3>
-<ul>
-    <li>Sadness, sudden crying, hypersensitivity, or impatience</li>
-    <li>Feelings of guilt ("Why me and not them?"), confusion, or temporary loss of interest</li>
-    <li>Difficulty feeling "real joy" or connection to things that once moved you</li>
-    <li>Recurring thoughts about what happened, or desire to distance completely from the topic</li>
-</ul>
-
-<h3>Physical:</h3>
-<ul>
-    <li>Increased fatigue, weakness, or difficulty sleeping deeply</li>
-    <li>Heart palpitations, sweating, muscle tension, or chest pressure</li>
-    <li>Changed appetite, stomach aches, or persistent headaches</li>
-</ul>
-
-<h3>Behavioral and Social:</h3>
-<ul>
-    <li>Need for quiet, temporary withdrawal, or social distancing</li>
-    <li>Aversion to crowded places or loud noises</li>
-    <li>Desire for increased activity ("staying busy") to avoid stopping and feeling</li>
-</ul>
-
-<div class="quote-box">
-    💬 These reactions are considered normal. The soul is learning anew how to live in peace after a period of noise.
-</div>
-
-<h2>⚠ Signs of Distress – When Reactions Persist or Worsen</h2>
-
-<p>If some of these feelings persist for more than two months, or begin to worsen – it's a sign that the soul needs professional help or more significant support.</p>
-
-<h3>Behavioral:</h3>
-<ul>
-    <li>Prolonged withdrawal, disconnection from close people</li>
-    <li>Persistent loss of interest in work, studies, or hobbies</li>
-    <li>Excessive use of alcohol, medications, or calming substances</li>
-    <li>Daily dysfunction – difficulty getting up, eating, or maintaining basic routine</li>
-</ul>
-
-<h3>Emotional:</h3>
-<ul>
-    <li>Deep sadness, feelings of despair or persistent emptiness</li>
-    <li>Constant fears, unrelenting tension, continuous sense of danger</li>
-    <li>Heavy feelings of guilt, worthlessness, or thoughts of "there's no point"</li>
-</ul>
-
-<h3>Thoughts and Expressions:</h3>
-<ul>
-    <li>Statements like "I don't see a future," "I'm tired of everything," "better I wasn't here"</li>
-    <li>Recurring thoughts about death or about friends who are gone</li>
-    <li>Severe confusion, difficulty making decisions, or inability to concentrate</li>
-</ul>
-
-<div class="important-box">
-    <strong>The battle may be over – but healing is just beginning.</strong><br>
-    The road back to yourself begins with listening to what you feel.
-</div>
-
-<!-- CHAPTER 3 -->
-<div class="chapter-title">
-    <h1>Chapter 3: How to Begin Mental Recovery</h1>
-</div>
-
-<h2>From the Moment the Body Returns – Until the Soul Begins to Breathe</h2>
-
-<p>Sometimes the quiet after the storm is louder than everything. The body may have already returned to routine, but inside there's still an echo. This is the stage where the recovery process begins – gentle, personal, sometimes slow, but always possible.</p>
-
-<div class="quote-box">
-    💬 The body is the first home of the soul. When it feels safe – the soul also begins to relax.
-</div>
-
-<h2>🌿 First Stage – Returning to the Body</h2>
-
-<p>To heal the soul, you must start with the body. It is the living memory of everything we've been through, and it's also the gateway to healing.</p>
-
-<h3>What Helps at This Stage:</h3>
-
-<div class="tools-box">
-    <h4><span class="icon">😴</span>Sleep:</h4>
-    <p>Return to regular sleep hours – even if gradually.</p>
-    
-    <h4><span class="icon">🥗</span>Nutrition:</h4>
-    <p>Eat real, simple, life-giving food.</p>
-    
-    <h4><span class="icon">🫁</span>Breathing Practice:</h4>
-    <p>4 seconds inhale, 6 hold, 8 seconds exhale – repeat 10 times</p>
-    
-    <h4><span class="icon">🚶</span>Movement:</h4>
-    <p>Any gentle movement brings life back to the body – walking, yoga, swimming, dancing.</p>
-    
-    <h4><span class="icon">🫂</span>Touch:</h4>
-    <p>Hug, massage, or even gentle self-touch – calms the nervous system.</p>
-    
-    <h4><span class="icon">🌳</span>Being in Nature:</h4>
-    <p>Walking barefoot in sand or grass, sitting by a tree, watching a sunset. Nature heals without words – reminds us of the slow rhythm, beauty, and life that continues.</p>
-    
-    <h4><span class="icon">👣</span>Grounding:</h4>
-    <p>Stop and notice what you feel now – feet touching the ground, breath entering and exiting, sound of a bird or wind. Conscious connection to body and present moment reminds the system: "We're here. Now. Safe."</p>
-</div>
-
-<h2>💫 Second Stage – Returning to the Soul</h2>
-
-<p>After the body calms, it's time to meet the emotion. This isn't a process of "forgetting," but of giving space to what was – so as not to get stuck in it.</p>
-
-<h3>What Helps Here:</h3>
-<ul>
-    <li><strong>Conversation and Writing:</strong> Talk, write, share. Don't hold it inside.</li>
-    <li><strong>Creative Expression:</strong> Drawing, poetry, music, photography – any way that brings out what has no words.</li>
-    <li><strong>Support:</strong> Turn to professional help – psychologist, counselor, support group.</li>
-    <li><strong>Connection with Those Who Experienced Something Similar:</strong> Understand you're not alone.</li>
-    <li><strong>Meeting with Emotions:</strong> Don't fear the crying, the anger, the longing. Every emotion is a message. When you feel it and don't run – it calms down.</li>
-</ul>
-
-<div class="quote-box">
-    💬 The soul doesn't need "fixing" – it needs space and when given room to breathe, it finds the way to heal itself.
-</div>
-
-<h2>🔆 Third Stage – Returning to Meaning</h2>
-
-<p>When the pain begins to calm, a new question awakens: "So what now?" This stage deals with rebuilding – of identity, values, hope, and sense of mission. It's not about returning to what was, but growing from what happened.</p>
-
-<h3>What Helps Here:</h3>
-<ul>
-    <li><strong>Action with Heart:</strong> Volunteering, helping others, contributing to community – returns sense of value and meaning.</li>
-    <li><strong>Personal Vision:</strong> Set a new goal, even small – learn, travel, establish something, start a new chapter.</li>
-    <li><strong>Connection to Values:</strong> Faith, people, family, nature – whatever provides a sense of roots and stability.</li>
-    <li><strong>Creation from Pain:</strong> Turn personal experience into story, art, or inspiration for others.</li>
-    <li><strong>Return to Naturalness:</strong> Not to what was "before," but to who I am now – with everything I discovered along the way.</li>
-</ul>
-
-<div class="quote-box">
-    💬 Pain is not weakness – it's a sign of a brave heart that lived fully. True healing is the courage to continue – in light, in love, and in faith.
-</div>
-
-<!-- CHAPTER 4 -->
-<div class="chapter-title">
-    <h1>Chapter 4: Additional Daily Coping Tools</h1>
-</div>
-
-<h2>Small Steps of Healing – Every Day Anew</h2>
-
-<p>Healing is built from small, simple, consistent steps – actions that remind the brain and heart: I am alive. I am here. Everything is okay. There's no one right way to calm down – there are small acts of self-love, done day after day.</p>
-
-<h2>🌈 The Captain's Toolkit - For Returning to Balance, Breathing, and Hope</h2>
-
-<div class="tools-box">
-    <h3>🧘‍♂️ First – Calm the Body</h3>
+    <p><strong>Physical:</strong></p>
     <ul>
-        <li><strong>🫁 4-7-8 Breathing</strong> – 4 second inhale, 7 hold, 8 slow exhale</li>
-        <li><strong>👣 "5 Senses" Grounding</strong> – Identify what I see, touch, hear, smell, and taste</li>
-        <li><strong>🌳 Walk in Nature/Outside</strong> – A few minutes of air, sky, sun, and wind</li>
-        <li><strong>🫂 Hug and Calming Touch</strong> – 20 second hug or hand on heart and deep breath</li>
-        <li><strong>💧 Drinking, Food, and Sleep</strong> – Take care of the body: drink water, eat something nutritious, and rest</li>
-        <li><strong>💃 Dance and Movement</strong> – Release from the body through rhythm, breathing, and free movement</li>
-        <li><strong>💪 Fitness</strong> – Moderate physical activity that returns sense of strength, presence, and body control</li>
-        <li><strong>😊 Small Smile</strong> – Even one smile changes your energy and those around you</li>
+        <li>Increased fatigue, weakness or difficulty sleeping deeply</li>
+        <li>Heart palpitations, sweating, muscle tension, or chest pressure</li>
+        <li>Changed appetite, stomach aches or persistent headaches</li>
     </ul>
-</div>
 
-<div class="tools-box">
-    <h3>💖 Give Space to Heart and Emotions</h3>
+    <p><strong>Behavioral and Social:</strong></p>
     <ul>
-        <li><strong>✍ Liberating Writing</strong> – Write what you feel, without judgment</li>
-        <li><strong>🌟 Counting Successes</strong> – 3 small things I succeeded in today</li>
-        <li><strong>🙏 Moment of Gratitude</strong> – Choose 3 things to be grateful for</li>
-        <li><strong>💬 Conversation with Safe Person</strong> – Share with someone who feels safe and truly listens</li>
-        <li><strong>🎨 Creation and Art</strong> – Draw, sing, dance, or create – give free expression to emotion</li>
-        <li><strong>🎵 Healing Music</strong> – Hear a song that evokes hope, to relax or sing aloud</li>
+        <li>Need for quiet, temporary isolation, or social distancing</li>
+        <li>Recoiling from crowded places or loud noises</li>
+        <li>Desire for increased activity ("staying busy") to avoid stopping and feeling</li>
     </ul>
-</div>
 
-<div class="tools-box">
-    <h3>💡 Strengthen the Mind and Meaning</h3>
+    <div class="info">
+        <strong>💬 These reactions are considered normal.</strong> The soul is learning again how to live in quiet after a period of noise.
+    </div>
+
+    <h3><span class="icon">⚠</span> Signs of Distress – When Reactions Continue or Worsen</h3>
+    <div class="warning">
+        <p><strong>If some of these feelings continue for more than two months, or begin to worsen – this is a sign that the soul needs professional help or more meaningful support.</strong></p>
+    </div>
+
+    <p><strong>Behavioral:</strong></p>
     <ul>
-        <li><strong>🧠 Testing Thought</strong> – Ask: "Is this really true?" and see if there's another perspective</li>
-        <li><strong>🧘‍♀️ Mindfulness / Short Meditation</strong> – A few minutes of quiet and conscious breathing</li>
-        <li><strong>🛡 Good Boundaries</strong> – Know when to say "not now," to protect yourself</li>
-        <li><strong>💌 Small Good Deed</strong> – Good word, smile, help – good to others heals us too</li>
-        <li><strong>🎯 Setting Small Goals</strong> – Choose realistic target and celebrate every step</li>
-        <li><strong>🌸 Empowerment and Development Workshops</strong> – Join meetings, learn, strengthen, and fill up</li>
-        <li><strong>📚 Reading Inspiring Books</strong> – Connect to stories that remind you of hope and light</li>
+        <li>Prolonged isolation, detachment from close people</li>
+        <li>Persistent loss of interest in work, studies, or hobbies</li>
+        <li>Excessive use of alcohol, medications or sedatives</li>
+        <li>Daily dysfunction – difficulty getting up, eating, or maintaining basic routine</li>
     </ul>
-</div>
 
-<div class="tools-box">
-    <h3>🌍 Remember – Not Alone on the Journey</h3>
+    <p><strong>Emotional:</strong></p>
     <ul>
-        <li><strong>🤝 Support Groups</strong> – Join circles, groups, or community that understands you</li>
-        <li><strong>💞 Captain IL Reservists Community</strong> – Space for sharing, inspiration, and connection</li>
-        <li><strong>👨‍👩‍👧‍👦 Time with Loved Ones</strong> – Meet, hug, laugh, and remember how love heals</li>
-        <li><strong>📞 Turning to Professional Help</strong> – Allowed and recommended to ask for support. It's bravery, not weakness</li>
+        <li>Deep sadness, feeling of despair or persistent emptiness</li>
+        <li>Constant fears, alertness that doesn't subside, feeling of constant danger</li>
+        <li>Heavy guilt feelings, feeling worthless, or thoughts of "no point"</li>
     </ul>
-</div>
 
-<h2>📚 Recommended Reading List for Healing and Mental Strengthening</h2>
+    <p><strong>Thoughts and Expressions:</strong></p>
+    <ul>
+        <li>Statements like "I see no future," "I'm fed up with everything," "better if I wasn't here"</li>
+        <li>Recurring thoughts about death or about friends who are gone</li>
+        <li>Severe confusion, difficulty making decisions or inability to concentrate</li>
+    </ul>
 
-<ul>
-    <li>"Man's Search for Meaning" – Viktor Frankl</li>
-    <li>"The Power of Now" – Eckhart Tolle</li>
-    <li>"The Journey" – Brandon Bays</li>
-    <li>"Loving What Is" – Byron Katie</li>
-    <li>"When Things Fall Apart" – Pema Chödrön</li>
-    <li>"The Body Keeps the Score" – Bessel van der Kolk</li>
-</ul>
+    <div class="quote">
+        The battle may be over – but healing has just begun.<br>
+        The way back to yourself begins with listening to what you feel.<br>
+        To breathe. To feel. To let go. To return.
+    </div>
 
-<div class="quote-box">
-    Hope is not a destination – it's a path. Every day, every breath, every heart that opens.
-</div>
+    <h2><span class="icon">💙</span> Chapter 3 – How to Begin Healing the Soul</h2>
+    
+    <h3>From the Moment the Body Returns – Until the Soul Begins to Breathe</h3>
+    <p>Sometimes the quiet after the storm subsides is the most unsettling of all. The body may have returned to routine, but inside there's still an echo. This is the stage where the healing process begins – gentle, personal, sometimes slow, but always possible.</p>
 
-<!-- CHAPTER 5 -->
-<div class="chapter-title">
-    <h1>Chapter 5: Sources of Support, Community, and Help</h1>
-</div>
+    <div class="info">
+        <strong>💬 The body is the first home of the soul.</strong> When it feels safe – the soul also begins to calm down.
+    </div>
 
-<h2>Healing Doesn't Happen Alone</h2>
+    <h3><span class="icon">🌿</span> First Stage – Returning to the Body</h3>
+    <p>To heal the soul, you must start with the body. It is the living memory of everything we've been through, and it is also the gateway to healing.</p>
 
-<p>Mental recovery is a personal journey – but it never happens alone. Friends, family, community, and professionals are a network of hearts holding the path back to life together.</p>
+    <p><strong>What helps at this stage:</strong></p>
+    <ul>
+        <li><strong>Sleep:</strong> Restore regular sleep hours – even if gradually</li>
+        <li><strong>Nutrition:</strong> Eat real, simple, life-giving food</li>
+        <li><strong>Breathing practice:</strong> 4 seconds inhale, 7 hold breath, 8 exhale (10 times)</li>
+        <li><strong>Movement:</strong> Any gentle movement restores life to the body – walking, yoga, swimming, dancing</li>
+        <li><strong>Touch:</strong> Hugging, massage, or even gentle self-touch – calms the nervous system</li>
+        <li><strong>Being in nature:</strong> Walking barefoot in sand or grass, sitting by a tree, watching sunset</li>
+        <li><strong>Grounding:</strong> Stop and notice what you're feeling now – feet touching ground, breath going in and out</li>
+    </ul>
 
-<h2>🌿 Sources of Emotional Support</h2>
+    <h3><span class="icon">💫</span> Second Stage – Returning to the Soul</h3>
+    <p>After the body calms down, it's time to meet the emotion. This is not a process of "forgetting," but of giving space to what was – so as not to get stuck in it.</p>
 
-<h3>Friends and Family Members:</h3>
-<p>Don't be afraid to ask for help. Those who love you want to know how to help – even if they don't always know how to ask.</p>
+    <p><strong>What helps here:</strong></p>
+    <ul>
+        <li><strong>Conversation and writing:</strong> Talk, write, share. Don't hold it inside</li>
+        <li><strong>Creative expression:</strong> Drawing, poetry, music, photography – any way that brings out what has no words</li>
+        <li><strong>Support:</strong> Seek professional help – psychologist, counselor, support group</li>
+        <li><strong>Connection with people who experienced something similar:</strong> Understand you're not alone</li>
+        <li><strong>Meeting with emotions:</strong> Don't fear crying, anger, longing. Every emotion is a message</li>
+    </ul>
 
-<h3>Mutual Support Communities:</h3>
-<p>Sharing with others going through similar experiences allows the soul to breathe anew. Belonging creates resilience, hope, and sense of being seen.</p>
+    <div class="info">
+        <strong>💬 The soul doesn't need "fixing" – it needs space.</strong> When given room to breathe, it finds the way to heal itself.
+    </div>
 
-<h2>🧭 Official Assistance Sources – For Reservists and Their Families</h2>
+    <h3><span class="icon">🔆</span> Third Stage – Returning to Meaning</h3>
+    <p>When the pain begins to ease, a new question arises: "So what now?" This stage deals with rebuilding – of identity, values, hope, and sense of mission.</p>
 
-<div class="hotline">
-    <strong>*6690</strong>
-    <span>IDF Mental Health Hotline (24/7)</span>
-</div>
+    <p><strong>What helps here:</strong></p>
+    <ul>
+        <li><strong>Action with heart:</strong> Volunteering, helping others, contributing to community – restores sense of value and meaning</li>
+        <li><strong>Personal vision:</strong> Set a new goal, even small – learn, travel, establish something, start a new chapter</li>
+        <li><strong>Connection to values:</strong> Faith, people, family, nature – anything that provides sense of roots and stability</li>
+        <li><strong>Creation from pain:</strong> Turn personal experience into story, art, or inspiration for others</li>
+        <li><strong>Return to naturalness:</strong> Not to what was "before," but to who I am now – with all I've discovered along the way</li>
+    </ul>
 
-<div class="hotline">
-    <strong>*8944</strong>
-    <span>"Nefesh Achat" (One Soul) Line</span>
-</div>
+    <div class="quote">
+        Pain is not weakness – it's a sign of a brave heart that lived fully.<br>
+        True healing is the courage to continue – in light, in love, and in faith.
+    </div>
 
-<div class="hotline">
-    <strong>03-6401400</strong>
-    <span>Combat Reactions Unit</span>
-</div>
+    <h2><span class="icon">💙</span> Chapter 4 – Daily Coping Tools</h2>
+    
+    <h3>Small Steps of Healing – Every Day Anew</h3>
+    <p>Healing is built from small, simple, consistent steps – actions that remind the brain and heart: I am alive. I am here. Everything is okay.</p>
 
-<div class="hotline">
-    <strong>1-800-363-363</strong>
-    <span>NATAL – National Trauma & Stress Center</span>
-</div>
+    <h3><span class="icon">🌈</span> The Captain's Toolbox - For Returning to Balance, Breath, and Hope</h3>
 
-<div class="hotline">
-    <strong>1201</strong>
-    <span>ERAN – Emotional First Aid</span>
-</div>
+    <h4>First – Calm the Body 🧘♂</h4>
+    <div class="tools-grid">
+        <div class="tool-item">
+            <div class="icon">🫁</div>
+            <strong>4-7-8 Breathing</strong>
+            <p>4 seconds inhale, 7 hold, 8 exhale</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">👣</div>
+            <strong>"5 Senses" Grounding</strong>
+            <p>Identify what I see, touch, hear, smell, and taste</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">🌳</div>
+            <strong>Nature Walk</strong>
+            <p>Minutes of air, sky, sun, and wind</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">🫂</div>
+            <strong>Hug and Touch</strong>
+            <p>20 seconds or hand on heart with deep breathing</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">💧</div>
+            <strong>Hydration & Nutrition</strong>
+            <p>Care for body: water, nourishing food, rest</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">💃</div>
+            <strong>Dance and Movement</strong>
+            <p>Release from body through rhythm and free movement</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">💪</div>
+            <strong>Physical Activity</strong>
+            <p>Moderate exercise restoring sense of strength and control</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">😊</div>
+            <strong>Small Smile</strong>
+            <p>Even one smile changes your energy</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">🕺</div>
+            <strong>Body Shaking</strong>
+            <p>Releases tension and balances nervous system</p>
+        </div>
+        <div class="tool-item">
+            <div class="icon">❄</div>
+            <strong>Ice Bath</strong>
+            <p>Hormetic tool strengthening mental resilience</p>
+        </div>
+    </div>
 
-<div class="hotline">
-    <strong>*3362</strong>
-    <span>"Safe Passage" Hotline (Support for Returning to Routine)</span>
-</div>
+    <h4>Give Space to Heart and Emotions 💖</h4>
+    <ul>
+        <li><strong>✍ Liberating Writing:</strong> Write what you feel, without judgment</li>
+        <li><strong>🌟 Count Successes:</strong> 3 small things I succeeded at today</li>
+        <li><strong>🙏 Moment of Gratitude:</strong> Choose 3 things to be grateful for</li>
+        <li><strong>💬 Talk with Safe Person:</strong> Share with someone who feels safe and truly listens</li>
+        <li><strong>🎨 Creation and Art:</strong> Draw, sing, dance or create – give free expression to emotion</li>
+        <li><strong>🎵 Healing Music:</strong> Listen to a song that evokes hope or relaxation</li>
+        <li><strong>🎤 Voice Release:</strong> Emotional expression through voice, shouting or humming to release suppressed emotions</li>
+        <li><strong>💓 Listen to Heartbeat:</strong> Quiet meditation of connecting to inner rhythm</li>
+    </ul>
 
-<div class="hotline">
-    <strong>*3757</strong>
-    <span>"Good Hands" Center (Medical and Mental Support)</span>
-</div>
+    <h4>Strengthen Mind and Meaning 💡</h4>
+    <ul>
+        <li><strong>🧠 Examining Thought:</strong> Ask: "Is this really true?" and see if there's another perspective</li>
+        <li><strong>🌄 Guided Imagery:</strong> To change inner perception of past events</li>
+        <li><strong>🧘♀ Mindfulness:</strong> Few minutes of quiet and conscious breathing</li>
+        <li><strong>🛡 Good Boundaries:</strong> Know when to say "not now," to protect yourself</li>
+        <li><strong>💌 Small Good Deed:</strong> Good word, smile, help – good for others heals us too</li>
+        <li><strong>🎯 Setting Small Goals:</strong> Choose realistic goal and celebrate every step</li>
+        <li><strong>🌸 Empowerment Workshops:</strong> Join meetings, learn, strengthen</li>
+        <li><strong>📵 Digital Detox:</strong> Intentional moments of disconnecting from screens</li>
+        <li><strong>📚 Reading Books:</strong> Connect to stories that remind and illuminate hope and light</li>
+    </ul>
 
-<div class="hotline">
-    <strong>1111 ext. 6</strong>
-    <span>"Kesher Ayin" Center (Combat Veterans & Families Support)</span>
-</div>
+    <h4>Remember – Not Alone in the Journey 🌍</h4>
+    <ul>
+        <li><strong>🤝 Support Groups:</strong> Join circles, groups or community that understand you</li>
+        <li><strong>💞 Captain IL Reservists Community:</strong> Space for sharing, inspiration, and connection</li>
+        <li><strong>👨‍👩‍👧‍👦 Time with Loved Ones:</strong> Meet, hug, laugh and remember how love heals</li>
+        <li><strong>📞 Seek Professional Help:</strong> It's allowed and recommended to ask for support. This is bravery, not weakness</li>
+        <li><strong>🫶 Mutual Support:</strong> Connect with a "hope partner" for support and listening</li>
+    </ul>
 
-<div class="hotline">
-    <strong>1111 ext. 4</strong>
-    <span>Reservists Aid Fund</span>
-</div>
+    <h3>📚 Recommended Reading List for Healing and Strengthening the Soul</h3>
+    <ul>
+        <li>"Man's Search for Meaning" – Viktor Frankl</li>
+        <li>"The World Cannot Exist Without You" - Moshe Sharon</li>
+        <li>"The Wonders of Anger" - Moshe Sharon</li>
+        <li>"The Tree of Good Lives" - Aharon Darmon</li>
+        <li>"The Power of Now" – Eckhart Tolle</li>
+        <li>"The Journey" – Brandon Bays</li>
+        <li>"Loving What Is" – Byron Katie</li>
+        <li>"The Soul Bird" - Michal Snunit</li>
+    </ul>
 
-<h3>Additional Resources:</h3>
-<ul>
-    <li><strong>Rehabilitation Division – Ministry of Defense:</strong> Recognition and support for military service casualties (via 1111)</li>
-    <li><strong>"Shvilim" Program:</strong> Vocational and mental rehabilitation for discharged soldiers and reservists</li>
-    <li><strong>"Lev Echad" Association:</strong> Support and aid for soldiers, families, and anxiety victims</li>
-    <li><strong>"Returning to Life" Association:</strong> Help coping with post-trauma and loss</li>
-</ul>
+    <div class="quote">
+        Hope is not a destination – it's a way. Every day, every breath, every opening heart.
+    </div>
 
-<h2>🔆 Captain's Recommended Programs, Organizations, and Communities</h2>
+    <h2><span class="icon">💙</span> Chapter 5 – Sources of Support, Community, and Help</h2>
+    
+    <h3>Healing Doesn't Happen Alone</h3>
+    <p>Soul recovery is a personal journey – but it never happens alone. Friends, family, community, and professionals are a network of hearts holding together the way back to life.</p>
 
-<div class="tools-box">
-    <h4>Salon 448 - hatashtit.co.il/448</h4>
-    <p>Active home and community for warriors and reservists at Marina Herzliya with activities, water sports, meetings, jam sessions, wellness initiatives, and mutual support.</p>
-</div>
+    <h3><span class="icon">🌿</span> Sources of Emotional Support</h3>
+    <ul>
+        <li><strong>Friends and Family:</strong> Don't be afraid to ask for help. Those who love you want to know how to help</li>
+        <li><strong>Mutual Support Communities:</strong> Sharing with others experiencing similar things allows the soul to breathe anew</li>
+    </ul>
 
-<div class="tools-box">
-    <h4>AMIT Program (Ministry of Defense) - amit.movement4life.co.il</h4>
-    <p>Free toolkit for reservists and discharged soldiers: sports, treatments, and app with 12,000 coins.</p>
-</div>
+    <h3><span class="icon">🧭</span> Official Support Sources – For Reservists and Their Families</h3>
+    <div class="info">
+        <h4>Emergency Hotlines, Support and Emotional & Professional Assistance (24/7):</h4>
+        <ul>
+            <li><strong>IDF Mental Health Center:</strong> *6690</li>
+            <li><strong>"One Soul" Hotline:</strong> *8944</li>
+            <li><strong>Combat Stress Unit:</strong> 03-6401400</li>
+            <li><strong>National Trauma Victims Center:</strong> 1-800-363-363</li>
+            <li><strong>ERAN – Mental First Aid:</strong> 1201</li>
+            <li><strong>"Safe Passage" Center:</strong> *3362</li>
+            <li><strong>"In Good Hands" Center:</strong> *3757</li>
+            <li><strong>"Eye Contact" Center:</strong> 1111 ext. 6</li>
+            <li><strong>Reservists Aid Fund:</strong> 1111 ext. 4</li>
+            <li><strong>IDF Combat Stress & Mental Support Unit:</strong> 03-6401400</li>
+        </ul>
+        
+        <ul>
+            <li><strong>Rehabilitation Division – Ministry of Defense:</strong> Recognition and support for military service casualties (via 1111)</li>
+            <li><strong>"Paths" Program:</strong> Vocational and mental rehabilitation for discharged soldiers and reservists</li>
+            <li><strong>"One Heart" Association:</strong> Support and aid for soldiers, families and anxiety victims</li>
+            <li><strong>"Returning to Life" Association:</strong> Help coping with post-trauma and loss</li>
+        </ul>
+    </div>
 
-<div class="tools-box">
-    <h4>"Returning to Routine" Program - shavimback.com</h4>
-    <p>8 free nature meetings (in partnership with Aviram Fund + IDF Disabled Veterans) for former reserve soldiers from Iron Swords War for returning to routine and balance.</p>
-</div>
+    <div class="warning">
+        <strong>Don't stand alone. Asking for help is bravery – not weakness.</strong>
+    </div>
 
-<div class="tools-box">
-    <h4>Future for Survivors and Wounded Association - lanizolim.co.il</h4>
-    <p>Daniel and Narya Sharabi's association for emotional, vocational, and social support for trauma survivors and wounded in the community.</p>
-</div>
+    <h3><span class="icon">🔆</span> Recommended Programs, Associations and Communities by The Captain</h3>
+    <ul>
+        <li><strong>Salon 448:</strong> Home and active community for soldiers and reservists in Herzliya Marina - hatashtit.co.il/448</li>
+        <li><strong>Amit Program (Ministry of Defense):</strong> Free toolkit for reservists - amit.movement4life.co.il</li>
+        <li><strong>Returning to Routine Program:</strong> 8 free nature meetings - shavimback.com</li>
+        <li><strong>Future for Survivors and Wounded Association:</strong> Emotional and vocational support - lanizolim.co.il</li>
+        <li><strong>Hormesis Club (Tel Aviv):</strong> Wellness complex with special benefits for reservists - hormesis.club</li>
+        <li><strong>CAPTAIN IL Reservists Community on Facebook:</strong> Open warm community for reservists to share and support</li>
+    </ul>
 
-<div class="tools-box">
-    <h4>Hormesis Club (Tel Aviv) - hormesis.club</h4>
-    <p>Wellness complex including ice baths, breathing, yoga, sauna, and sustainable bar. Special benefits for reservists.</p>
-</div>
+    <div class="quote">
+        Together We Heal and Dream
+    </div>
 
-<div class="tools-box">
-    <h4>Captain IL Reservists Community on Facebook</h4>
-    <p>Open and warm community for reservists for sharing, support, inspiration, and values-based connection.</p>
-</div>
+    <h2><span class="icon">💙</span> Chapter 6 – Advice for Family and Friends</h2>
+    
+    <div class="info">
+        <strong>💬 You are not just the home front – you are the heart holding it all together.</strong>
+    </div>
 
-<div class="important-box">
-    <strong>Don't stand alone. Asking for help is bravery – not weakness.</strong>
-</div>
+    <h3>How to Be There – Without Rescuing, Just Holding Space</h3>
+    <p><strong>💫 To families, mothers, fathers, siblings and friends – you are the home front holding the heart.</strong> Healing doesn't only happen with the fighter, but also at home, in the heart of those who wait, listen, and contain.</p>
 
-<!-- CHAPTER 6 -->
-<div class="chapter-title">
-    <h1>Chapter 6: Advice for Family and Friends</h1>
-</div>
+    <h3><span class="icon">🌿</span> What's Important to Know</h3>
+    <ul>
+        <li>The soul needs time. Returning to routine doesn't happen in one day – sometimes not in one year</li>
+        <li>Unusual reactions are normal. Sudden crying, anger, silence, confusion – these are expressions of pain, not weakness</li>
+        <li>There's no "right" way to feel. Everyone reacts differently, and every pace is legitimate</li>
+        <li>Quiet is not always serenity. Sometimes it's a defense mechanism. Don't pressure to talk, just be there</li>
+    </ul>
 
-<h2>How to Be There – Without Rescuing, Just Holding Space</h2>
+    <div class="info">
+        <strong>💬 The key is patience – not judging, not rushing to fix, just being.</strong>
+    </div>
 
-<p>💫 <strong>For families, mothers, fathers, siblings, and friends</strong> – you are the backbone holding the heart. Healing doesn't happen only with the warrior, but also at home, in the heart of those waiting, listening, and containing.</p>
+    <h3><span class="icon">💫</span> What TO Do</h3>
+    <ul>
+        <li><strong>True Listening:</strong> Sit beside them. No phones, no advice. Just listen</li>
+        <li><strong>Gentle Presence:</strong> Sometimes it's enough to know someone is nearby</li>
+        <li><strong>Ask Open Questions:</strong> Instead of "what happened there?", try "how do you feel today?"</li>
+        <li><strong>Give Choice:</strong> Ask if they want to talk, go out, rest. Don't force anything</li>
+        <li><strong>Help with Small Details:</strong> Cooking, organizing, driving. Simple actions create security</li>
+        <li><strong>Encourage Movement and Activity:</strong> Walking, beach, friends gathering – but no pressure</li>
+        <li><strong>Remember Yourself Too:</strong> To support – you need to breathe. Don't forget to care for yourself</li>
+    </ul>
 
-<h2>🌿 What's Important to Know:</h2>
+    <h3><span class="icon">⚠</span> What NOT to Do</h3>
+    <div class="warning">
+        <ul>
+            <li><strong>❌ Don't say "be strong"</strong> – it closes off</li>
+            <li><strong>❌ Don't compare</strong> ("I was also in a tough situation") – it invalidates</li>
+            <li><strong>❌ Don't try to "fix" or solve</strong></li>
+            <li><strong>❌ Don't push to open up</strong> – real conversation happens only when the heart is ready</li>
+            <li><strong>❌ Don't ignore.</strong> Be present, and gently ask if and how you can help</li>
+        </ul>
+    </div>
 
-<ul>
-    <li>The soul needs time. Returning to routine doesn't happen in one day – sometimes not in one year.</li>
-    <li>Unusual reactions are normal. Sudden crying, anger, silence, confusion – these are expressions of pain, not weakness.</li>
-    <li>There's no "correct" way to feel. Everyone reacts differently, and every pace is legitimate.</li>
-    <li>Quiet is not always serenity. Sometimes it's a defense mechanism. Don't pressure to talk, just be there.</li>
-</ul>
+    <div class="info">
+        <strong>💬 Sometimes quiet presence is worth more than a thousand words.</strong>
+    </div>
 
-<div class="quote-box">
-    💬 The key is patience – not judging, not rushing to fix, simply being.
-</div>
+    <h3><span class="icon">🔆</span> When to Seek Professional Help</h3>
+    <p><strong>If you notice any of the following – it's important to encourage seeking professional support:</strong></p>
+    <ul>
+        <li>Prolonged isolation or complete detachment from close people</li>
+        <li>Sharp changes in behavior or mood</li>
+        <li>Signs of despair, meaninglessness or talk about death</li>
+        <li>Increased use of alcohol, pills or addictive substances</li>
+        <li>Recurring anger outbursts or verbal/physical violence</li>
+        <li>Extreme reactions to noises, news, smells or daily situations</li>
+    </ul>
 
-<h2>💫 What TO Do:</h2>
+    <div class="info">
+        <strong>💬 Professional help is not a sign of weakness – it's an act of courage and responsibility.</strong>
+    </div>
 
-<ul>
-    <li><strong>True Listening:</strong> Sit beside them. No phones, no advice. Just listen to what comes out or what doesn't come out.</li>
-    <li><strong>Gentle Presence:</strong> Sometimes it's enough to know someone is nearby. Don't have to talk, just be available.</li>
-    <li><strong>Ask Open Questions:</strong> Instead of "What happened there?" try "How are you feeling today?"</li>
-    <li><strong>Give Choice:</strong> Ask if they want to talk, go out, rest. Need help? Don't force anything.</li>
-    <li><strong>Help with Small Details:</strong> Cooking, organizing, driving. Simple actions create sense of security.</li>
-    <li><strong>Encourage Movement and Activity:</strong> Walking, sea, meeting friends – but without pressure, just as suggestion.</li>
-    <li><strong>Remember Yourselves Too:</strong> To support – you need to breathe. Don't forget to care for yourselves.</li>
-</ul>
-
-<h2>⚠ What NOT to Do:</h2>
-
-<ul>
-    <li>❌ Don't say "Be strong" – it closes off</li>
-    <li>❌ Don't compare ("I was also in difficult situation") – it invalidates</li>
-    <li>❌ Don't try to "fix" or solve</li>
-    <li>❌ Don't push to open up – real conversation happens only when heart is ready</li>
-    <li>❌ Don't ignore. Be present, and ask gently if and how you can help</li>
-</ul>
-
-<div class="quote-box">
-    💬 Sometimes silent presence is worth more than a thousand words.
-</div>
-
-<h2>🔆 When to Turn to Professional Help</h2>
-
-<p><strong>Important:</strong> If you notice any of the following – it's important to encourage turning to professional support:</p>
-
-<ul>
-    <li>Prolonged withdrawal or complete disconnection from close people</li>
-    <li>Sharp changes in behavior or mood</li>
-    <li>Signs of despair, lack of meaning, or talk about death</li>
-    <li>Increased use of alcohol, pills, or addictive substances</li>
-    <li>Repeated angry outbursts or verbal/physical violence</li>
-    <li>Extreme reactions to noises, news, smells, or daily situations</li>
-</ul>
-
-<div class="quote-box">
-    💬 Professional help is not a sign of weakness – it's an act of courage and responsibility.
-</div>
-
-<div class="important-box">
-    <p style="text-align: center; font-style: italic; line-height: 2;">
-        "If you meet a broken person, sit with them<br>
+    <div class="quote">
+        If you meet a broken person, sit with them<br>
         On the threshold of the cursed break<br>
         Don't try to fix<br>
         Don't want anything<br>
-        With reverence and love of others<br>
-        Sit with them, so they won't be there alone."<br>
-        <em>– Smadar Weinstock</em>
-    </p>
-</div>
-
-<p style="text-align: center; margin-top: 40px; font-size: 1.2rem; color: #0078D4;">
-    💬 <strong>You're not just the rear – you're the heart that holds it all together.</strong>
-</p>
-
-<!-- SUMMARY -->
-<div class="chapter-title">
-    <h1>Summary: The Journey of Hope with Captain IL<br>Turning Pain into Power</h1>
-</div>
-
-<h2>🌿 Sometimes the Path to Healing Begins with One Small Step – in a Heart Ready to Feel</h2>
-
-<p>After all we've been through – the body, soul, and heart need time, space, and compassion. There's no one right way to return to routine, and no uniform pace for healing. There's only listening – to yourself, to the environment, and to this moment.</p>
-
-<div class="quote-box">
-    💭 When we suppress the pain or try to "move on" too quickly, the feelings that didn't get space can turn into deep scars – and sometimes into lasting trauma.
-</div>
-
-<p>But when we give these feelings expression – through conversation, writing, crying, touch, breathing – we allow them to pass through us, without controlling who we are.</p>
-
-<p><strong>Healing is not erasing the pain, but the ability to carry it – and create from it meaning, compassion, and strength.</strong> This is a process that happens slowly, within daily life, where every moment of awareness, breathing, and sharing – is a step of bravery.</p>
-
-<h2>💫 This is the Time</h2>
-
-<p>This is the time to give space to everything rising: fear, confusion, anger, longing, or hope. Emotions are not enemies – they are a compass. They are the body and soul's way of telling what still needs healing. When we learn to listen to them – we gradually return to ourselves.</p>
-
-<p><strong>And just as an entire nation fought – so an entire nation heals.</strong></p>
-
-<p>This journey is not just ours as individuals – it's a collective journey of awakening hearts, learning to breathe, relax, feel, and build together a new world where vulnerability is not weakness – but courage.</p>
-
-<div class="quote-box" style="font-size: 1.3rem;">
-    Precisely from the cracks the light enters,<br>
-    And within every difficulty hides an opportunity to be born anew.
-</div>
-
-<h2>💫 About Captain IL: Mission HOPE</h2>
-
-<p><strong>Captain IL: Mission HOPE</strong> is a social-communal initiative born from the heart of the People of Israel. A movement of inspiration and healing that connects between combat units, reserves, families, and communities in Israel and worldwide, with the goal of turning personal and national pain into power, hope, connection, and action. To illuminate, empower, and build a bridge between hearts – in Israel and worldwide.</p>
-
-<div class="tools-box">
-    <h3>💭 If This Guide Touched You</h3>
-    <p>If you feel the call to continue this light – you can take part in the journey and help the project grow, develop, and reach more souls.</p>
-    
-    <p>The project operates independently, and every support helps keep it alive and breathing – to produce new content, expand activities, and continue spreading hope.</p>
-    
-    <p><strong>Share your healing, recovery, and hope journeys</strong> in the Captain IL Reservists Community – to awaken light, inspiration, and sense of togetherness.</p>
-    
-    <p>📲 Follow <strong>Captain.IL</strong> on Facebook and Instagram, and join the movement of love, unity, and healing.</p>
-    
-    <p>💖 You can support the project via Bit: <strong>052-6363203</strong></p>
-</div>
-
-<div class="footer-note">
-    <p>With love and gratitude – for every heart joining the mission of light, hope, and healing.</p>
-    <p><strong>Captain IL</strong></p>
-    <p><em>Mission HOPE is not just an initiative – it's a journey of brave hearts.</em></p>
-    <p style="margin-top: 30px; font-size: 1.2rem; color: #0078D4;">
-        <strong>Even from the fragments – we choose light, love, and revival.</strong>
-    </p>
-</div>
-
-<div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%); color: white; border-radius: 15px;">
-    <div style="font-size: 2.5rem; font-weight: 800; margin-bottom: 20px;">CAPTAIN IL</div>
-    <div style="font-size: 1.3rem; letter-spacing: 3px; margin-bottom: 30px;">MISSION HOPE</div>
-    <div style="font-size: 1.5rem; font-style: italic;">
-        "To fight is courage.<br>
-        To feel is bravery.<br>
-        To choose to live – that is victory."
+        In awe and love of others<br>
+        Sit with them, so they won't be there alone.<br>
+        <em>(Smadar Weinstock)</em>
     </div>
-    <div style="margin-top: 30px; font-size: 1.1rem;">
-        Healing · Oneness · Partnership · Empowerment
-    </div>
-    <div style="margin-top: 20px; font-size: 0.9rem; opacity: 0.9;">
-        #CAPTAIN.IL | BY LEV 19:18
-    </div>
-</div>
 
+    <h2><span class="icon">💫</span> Summary – The Hope Journey with Captain IL: Turning Pain into Power</h2>
+    
+    <div class="quote">
+        Sometimes the path to healing begins with one small step – with a heart ready to feel.
+    </div>
+
+    <p>After all we've been through – the body, soul and heart need time, space, and compassion. There is no one right way to return to routine, and no uniform pace for healing. There is only listening – to yourself, to the environment, and to this moment.</p>
+
+    <p>When we suppress pain or try to "move on" too quickly, feelings that didn't receive space can become deep scars – and sometimes lasting trauma. But when we give these feelings expression – through conversation, writing, crying, touch, breathing – we allow them to pass through us, without controlling who we are.</p>
+
+    <p>Healing is not erasing pain, but the ability to carry it – and create from it meaning, compassion and strength. This is a process that occurs slowly, within daily life, where every moment of awareness, breathing and sharing – is a step of bravery.</p>
+
+    <div class="info">
+        <strong>💫 This is the time to give space to everything that arises:</strong> fear, confusion, anger, longing or hope. Emotions are not the enemy – they are a compass. They are the way the body and soul tell what still seeks healing.
+    </div>
+
+    <p>When we learn to listen to them – we gradually return to ourselves. And just as an entire nation fought – so an entire nation also heals.</p>
+
+    <p>This journey is not just ours as individuals – it is a collective journey of awakening hearts, learning to breathe, let go, feel, and build together a new world where vulnerability is not weakness – but courage.</p>
+
+    <div class="quote">
+        Precisely through the cracks the light enters,<br>
+        And within every difficulty hides an opportunity to be reborn.
+    </div>
+
+    <h2><span class="icon">💫</span> Captain IL: Mission HOPE</h2>
+    
+    <div class="contact-section">
+        <p><strong>Captain IL: Mission HOPE</strong> is a social-community initiative born from the heart of the people of Israel. An inspiration and healing movement connecting combat systems, reserves, families and communities in Israel and worldwide, aiming to transform personal and national pain into power of hope, connection and action.</p>
+        
+        <p>If this guide touched you, if you feel the call to continue this light – you can take part in the journey and help the project grow, flourish and reach more souls.</p>
+        
+        <p>The project operates independently, and every support helps keep it alive and breathing – producing new content, expanding activities, and continuing to spread hope.</p>
+        
+        <p><strong>💭 Share</strong> your healing, recovery and hope journeys in the Captain IL reservists community – to awaken light, inspiration and togetherness.</p>
+        
+        <p><strong>📲 Follow Captain.IL</strong> on Facebook and Instagram, and join the movement of love, unity and healing.</p>
+        
+        <p><strong>💖 Support the project via Bit:</strong> 052-6363203</p>
+        
+        <p>With love and gratitude – for every heart joining the mission of light, hope and healing.</p>
+        
+        <h3>Captain IL</h3>
+        <p><em>Mission HOPE is not just an initiative – it's a journey of brave hearts.</em></p>
+    </div>
+
+    <div class="quote">
+        Even from the fragments – we choose light, love, and resilience.
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; color: #0078D4;">
+        <strong>#CAPTAIN.IL</strong><br>
+        With God's Help
+    </div>
 </body>
 </html>
-
