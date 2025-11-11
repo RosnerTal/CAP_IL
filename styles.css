@@ -597,6 +597,79 @@ section {
     margin-right: 0.5rem;
 }
 
+/* Beyond 2026 Section */
+.beyond-2026 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 100px 20px;
+}
+
+.beyond-2026 .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.beyond-2026 .section-header h2,
+.beyond-2026 .section-badge {
+    color: white;
+}
+
+.beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.beyond-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.beyond-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.beyond-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.beyond-item h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.beyond-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.beyond-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.beyond-tagline {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+}
+
 /* Funding Section */
 .funding {
     background: var(--gradient-hope);
@@ -1331,6 +1404,7 @@ body.underline-links a {
     .goals-grid,
     .funding-breakdown,
     .partners-grid,
+    .beyond-grid,
     .contact-grid {
         grid-template-columns: 1fr;
     }
