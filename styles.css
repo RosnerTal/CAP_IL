@@ -1357,6 +1357,21 @@ body.underline-links a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-brand h1 {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+    .nav-brand .tagline {
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+    }
+
+    .nav-brand img {
+        height: 40px !important;
+    }
+
     .nav-menu {
         display: none;
         position: absolute;
